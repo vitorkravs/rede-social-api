@@ -22,15 +22,15 @@ export const LoginUser = async (req, res) => {
     const user = await results[0];
 
     if (!user) {
-      return res.status(404).send("Usuário não encontrado");
+      return res.status(404).json({ msg: "Usuário não encontrado" });
     }
 
     const match = await bcrypt.compare(password, user.password);
 
     if (match) {
-      return res.status(200).send("Usuário logado com sucesso");
+      return res.status(200).json({ msg: "Usuário logado com sucesso" });
     } else {
-      return res.status(401).send("Senha incorreta");
+      return res.status(401).json({ msg: "Senha incorreta" });
     }
   });
 };
