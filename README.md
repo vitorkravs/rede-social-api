@@ -71,7 +71,7 @@ O projeto vai rodar em http://localhost:8080
 
 ### Registro de Usuário
 
-[/register](http://localhost:8080/user/register)
+- register [http://localhost:8080/user/register]
 Método: POST
 
 Corpo da Requisição:
@@ -95,7 +95,7 @@ Resposta:
 
 ### Login de Usuário
 
-[/login](http://localhost:8080/user/login)
+- login [http://localhost:8080/user/login]
 
 Método: POST
 
