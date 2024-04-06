@@ -1,4 +1,4 @@
-### Projeto API de Autenticação Simples
+# Projeto API de Autenticação Simples
 
 Este projeto é uma API de autenticação simples construída com Node.js e Express, utilizando uuid para geração de IDs únicos para os usuários e bcrypt para hashing de senhas, garantindo uma segurança eficiente no armazenamento das senhas.
 
@@ -69,7 +69,7 @@ O projeto vai rodar em http://localhost:8080
 
 ## Endpoints
 
-# Registro de Usuário
+### Registro de Usuário
 
 [/register](http://localhost:8080/user/register)
 Método: POST
@@ -93,7 +93,7 @@ Resposta:
 }
 ```
 
-# Login de Usuário
+### Login de Usuário
 
 [/login](http://localhost:8080/user/login)
 
