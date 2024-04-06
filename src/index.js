@@ -18,10 +18,6 @@ app.use(
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello word");
-});
-
 app.use("/", userRoutes);
 
 app.listen(8080, () => {
